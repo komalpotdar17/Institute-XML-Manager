@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+1
+
+ for $x in doc("institute.xml")institute/course
+ let $courseId := $x/@course_id
+ where $x/credits=3
+ return <course_id> {$courseId} </course_id>
+
+ Result
+ <course_id> 22521 </course_id>
+ <course_id> 22518 </course_id>
+ 
+ 2
+  
+ for $x in doc("institute.xml")institute/faculty
+ where $x/experience<10
+ return $x/f_name
+  
+ Result
+  <f_name> S.M.Shelake </f_name> 
+  <f_name> A.S.Chavan </f_name>  
+  
+  
+ 3
+ for $d in /institute/department,
+     $i in /institute/instructor,
+     $c in /institute/course,
+ where $d/dept_id=$i/dept_id and $i/id = $c/id
+ return <course_instructor> The department {$d/d_name} has instructor {$i/f_name} who teaches {$c/abbreviation} </course_instructor>    
+ 
+ Result
+ <course_instructor> The Computer Engineering has instructor S.M.Shelake who teaches ADM </course_instructor>  
+ <course_instructor> The Computer Engineering has instructor A.S.Chavan who teaches OSY </course_instructor>
+     
+ 4
+ for $x in doc("institute.xml")institute/student
+ for $x in 52 to 54 
+ return <rollno> {$x} </rollno> 
+ 
+ Result
+  <rollno> 52 </rollno>
+  <rollno> 53 </rollno>
+  <rollno> 54 </rollno>  
+      

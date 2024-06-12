@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<institute>
+
+  <department dept_id="01">
+  <d_name> Computer Engineering </d_name>
+  <abb> CO </abb>
+  </department>
+  
+  <department dept_id="02">
+  <d_name> Civil Engineering </d_name>
+  <abb> CE </abb>
+  </department>
+   
+  
+   <instructor id="1234" dept_id="01">
+    <f_name> S.M.Shelake </f_name>
+    <salary> 100000 </salary>
+    <experienec>12 years</experienec>
+    <position> Lecturer </position>
+    <email> mgmulge21@gmail.com</email>
+    <phone> 8654265433 </phone>
+    </instructor>
+  
+  
+  <instructor id="1123" dept_id="01">
+    <f_name> A.S.Chavan </f_name>
+    <salary> 120000 </salary>
+    <experienec>15 years</experienec>
+    <position> HOD </position>
+    <email> chavan1@gmail.com</email>
+    <phone> 9876578654 </phone>
+  </instructor>
+  
+  <instructor id="1233" dept_id="02">
+    <f_name> R.B Kokare </f_name>
+    <salary> 80000 </salary>
+    <experienec>8 years</experienec>
+    <position> Lecturer </position>
+    <email> kokare123@gmail.com</email>
+    <phone> 9865445566 </phone>
+   </instructor>
+   
+   <instructor id="1322" dept_id="01">
+    <f_name> R. D. Kasar </f_name>
+    <salary> 120000 </salary>
+    <experienec>9 years</experienec>
+    <position> Lecturer </position>
+    <email> kasar4@gmail.com</email>
+    9213545677<phone> 5 </phone>
+    </instructor>
+  
+  
+
+  <course course_id="22521" id="1234">
+     <c_name>Advanced Database Management </c_name>
+     <abbreviation> ADM </abbreviation>
+     <credit> 3 </credit>
+  </course>
+  
+  <course course_id="22518" id="1123">
+     <name>Operating System </name>
+     <abbreviation> OSY </abbreviation>
+     <credit> 3 </credit>
+  </course>
+
+
+  <student>
+  <s_name> Phad Mayuri Satish </s_name>
+  <rollno> 52 </rollno>
+  <branch> Computer </branch>
+  <email> mayuri45@gmail.com </email>
+  <phone> 8775463212 </phone>
+  </student>
+  
+  <student>
+  <s_name> Potdar Komal Mahadev </s_name>
+  <rollno> 53 </rollno>
+  <branch> Computer </branch>
+  <email> komalp53@gmail.com </email>
+  <phone> 9960498553 </phone>
+  </student>
+  
+   <student>
+  <name> Potdar Sonali Sanjay </name>
+  <rollno> 54 </rollno>
+  <branch> Computer </branch>
+  <email> sonali5@gmail.com </email>
+  <phone> 7765456533 </phone>
+  </student>
+
+
+</institute>

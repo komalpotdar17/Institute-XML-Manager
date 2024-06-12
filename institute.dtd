@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE institute> [
+  <!ELEMENT  institute (department,instructor,course,student)>
+     <!ELEMENT department (d_name,abb)>
+     <!ELEMENT f_name (#PCDATA) #REQUIRED>
+     <!ELEMENT abb (#PCDATA)>
+
+     
+      <!ELEMENT instructor (f_name,salary,experience,position,email,phone)>
+       <!ELEMENT f_name (#PCDATA) #REQUIRED>
+       <!ELEMENT salary (#PCDATA)>
+       <!ELEMENT experience (#PCDATA)>
+       <!ELEMENT position (#PCDATA)>
+       <!ELEMENT email (#PCDATA)>
+       <!ELEMENT phone (#PCDATA)>
+       
+      <!ELEMENT course (c_name,abbreviation,credit)>
+       <!ELEMENT c_name (#PCDATA)> 
+       <!ELEMENT abbreviation (#PCDATA)>
+       <!ELEMENT credit (#PCDATA)>
+      
+      <!ELEMENT student (s_name,rollno,branch,email,phone)>
+        <!ELEMENT s_name (#PCDATA)>
+        <!ELEMENT rollno (#PCDATA)>
+        <!ELEMENT branch (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT phone (#PCDATA)>
+        
+        <!ATTLIST department (dept_id int #REQUIRED)>
+        <!ATTLIST instructor (id int #REQUIRED)>
+        <!ATTLIST course (course_id int #REQUIRED)>
+        
+   ]>

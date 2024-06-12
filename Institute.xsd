@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Institute" xmlns:tns="http://www.example.org/Institute" elementFormDefault="qualified">
+
+<xs:element name="institute">
+
+<xs:element name="deaprtment">
+  <xs:element name="d_name" type="xs:string" />
+  <xs:element name="abb" type="xs:string" />
+</xs:element>
+
+
+<xs:element name="instructor" >
+     <xs:element name="f_name" type="xs:string" />
+     <xs:element name="salary" type="xs:int" />
+     <xs:element name="experience" type="xs:string" />
+     <xs:element name="position" type="xs:string" />
+     <xs:element name="email" type="xs:string" />
+     <xs:element name="phone" type="xs:int" />
+</xs:element>
+     
+     
+     
+<xs:element name="course">
+     <xs:element name="c_name" type="xs:string" />
+     <xs:element name="abbreviation" type="xs:string" />
+     <xs:element name="credit" type="xs:int" /> 
+</xs:element>
+
+
+<xs:element name="student">
+     <xs:element name="s_name" type="xs:string" />
+     <xs:element name="rollno" type="xs:int" />
+     <xs:element name="brach" type="xs:string" />
+     <xs:element name="adress">
+     <xs:element name="email" type="xs:string" />
+     <xs:element name="phone" type="xs:int" />
+</xs:element>
+
+</xs:element>
+</xs:schema>
